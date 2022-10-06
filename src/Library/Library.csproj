@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PII_TwitterApi\src\Library\Library.csproj" />
+    <ProjectReference Include="..\..\..\PII_CognitiveAPI\src\Library\Library.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
