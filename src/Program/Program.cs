@@ -2,6 +2,7 @@
 using System.Collections;
 using Ridesharing;
 using CognitiveCoreUCU;
+using TwitterUCU;
 namespace PII_Herencia
 {
     class Program
@@ -18,14 +19,12 @@ namespace PII_Herencia
             Users conductor1 = new Conductor("Ford", "hola", "Augusto", "Sbarbaro", 11122233, 1);
             Users conductor2 = new Conductor("McQueen", "adios", "Coscu", "Pelado", 22233344, 3);
             Rideshare viaje = new Rideshare();
-            CognitiveFace cog = new CognitiveFace(true, Color.GreenYellow);
-
             
-            viaje.Add(conductor1,"h","h");
-            viaje.Add(conductor2,"h","h");
-            viaje.Add(pasajero1,"h","h");
-            viaje.Add(pasajero2,"h","h");
-            viaje.Add(pasajero3,"h","h");
+            viaje.Add(conductor1, "New Employee 1! ",@"bill2.jpg");
+            viaje.Add(conductor2, "New Employee 2! ",@"Mandarin.jpg");
+            viaje.Add(pasajero1, "New Employee 3! ",@"bill2.jpg");
+            viaje.Add(pasajero2, "New Employee 4! ",@"Mandarin.jpg");
+            viaje.Add(pasajero3, "New Employee 5! ",@"hola.jpg");
 
             pasajero1.Qualify(1,"Se");
             pasajero1.Qualify(5,"Se2");

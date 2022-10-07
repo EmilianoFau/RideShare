@@ -8,13 +8,10 @@ public class Rideshare
 {
     public List<Users> Users = new List<Users>();
 
-    public void Add(Users user, string text, string imagen)
+    public void Add(Users user, string text, string photo)
     {
         Users.Add(user);
         var twitter = new TwitterImage();
-        Console.WriteLine(twitter.PublishToTwitter("text", @"PathToImage.png"));
-        cog.Recognize(@"bill.jpg");
-        FoundFace(cog);
-    }
-    
+        Console.WriteLine(twitter.PublishToTwitter(text,photo));
+    }   
 }
