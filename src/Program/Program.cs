@@ -21,10 +21,10 @@ namespace PII_Herencia
             Rideshare viaje = new Rideshare();
             
             viaje.Add(conductor1, "New Employee 1! ",@"bill2.jpg");
-            viaje.Add(conductor2, "New Employee 2! ",@"Mandarin.jpg");
+            viaje.Add(conductor2, "New Employee 2! ",@"prueba.jpg");
             viaje.Add(pasajero1, "New Employee 3! ",@"bill2.jpg");
-            viaje.Add(pasajero2, "New Employee 4! ",@"Mandarin.jpg");
-            viaje.Add(pasajero3, "New Employee 5! ",@"hola.jpg");
+            viaje.Add(pasajero2, "New Employee 4! ",@"prueba.jpg");
+            viaje.Add(pasajero3, "New Employee 5! ",@"prueba.jpg");
 
             pasajero1.Qualify(1,"Se");
             pasajero1.Qualify(5,"Se2");
