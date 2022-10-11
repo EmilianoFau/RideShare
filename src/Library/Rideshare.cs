@@ -15,32 +15,13 @@ public class Rideshare
         String text = user.Descripcion();
         CognitiveFace cog = new CognitiveFace(false);
         cog.Recognize(photo);
-        if (FoundFace(cog))
+        user.FoundFace(cog);
+        if (user.Face)
         {
             var twitter = new TwitterImage();
             Console.WriteLine(twitter.PublishToTwitter(text,photo));
         }
 
-        static bool FoundFace(CognitiveFace cog)
-        {
-        if (cog.FaceFound)
-        {
-            Console.WriteLine("Face Found!");
-            if (cog.SmileFound)
-            {
-                Console.WriteLine("Found a Smile :)");
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("No smile found :(");
-            }
-        }
-        else
-        {
-            Console.WriteLine("No Face Found");
-        }    
-        return false;
-        }
+        
     }   
 }

@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using CognitiveCoreUCU;
 namespace Ridesharing;
 
 public abstract class Users
 {
+    public bool Face {get; set;}
     public Dictionary<int, string> Qualifications = new Dictionary<int, string>();
     public Users(string name, string surname, int id)   
     {
@@ -33,5 +35,16 @@ public abstract class Users
     public virtual string Descripcion()
     {
         return "a";
+    }
+    public virtual void FoundFace(CognitiveFace cog)
+    {
+        if (cog.FaceFound)
+        {
+            this.Face = true;
+        }
+        else
+        {
+            this.Face = false;
+        }
     }
 }
