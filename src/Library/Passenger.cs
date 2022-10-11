@@ -8,5 +8,8 @@ public class Passenger : Users
     {
 
     }
-    
+    public override string Descripcion()
+    {
+        return $"Nombre: {Name}\nApellido: {Surname}\nPasajero";
+    }
 }

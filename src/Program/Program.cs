@@ -3,6 +3,7 @@ using System.Collections;
 using Ridesharing;
 using CognitiveCoreUCU;
 using TwitterUCU;
+using System.Drawing;
 namespace PII_Herencia
 {
     class Program
@@ -13,18 +14,18 @@ namespace PII_Herencia
             planteamos un ejemplo de como hacerlo. Esto no significa que te limites a hacer solamente esto, debes pensar 
             en grande!*/
 
-            Users pasajero1 = new Passenger("Jorge", "Iglesias", 54246664);
-            Users pasajero2 = new Passenger("Ignacio", "Comunista", 78965433);
-            Users pasajero3 = new Passenger("ElEmi","Veganosqui", 00000002);
-            Users conductor1 = new Conductor("Ford", "hola", "Augusto", "Sbarbaro", 11122233, 1);
-            Users conductor2 = new Conductor("McQueen", "adios", "Coscu", "Pelado", 22233344, 3);
+            Users pasajero1 = new Passenger("Juan", "Bautista", 11155544);
+            Users pasajero2 = new Passenger("Agustin", "Agus", 22555666);
+            Users pasajero3 = new Passenger("Jesus","Loren", 33226655);
+            Users conductor1 = new Conductor("Lopus", "adios", "Felipe", "Santera", 22335566, 1);
+            Users conductor2 = new Conductor("Sepul", "hola", "Lorenzo", "Perez", 88996655, 3);
             Rideshare viaje = new Rideshare();
             
-            viaje.Add(conductor1, "New Employee 1! ",@"bill2.jpg");
-            viaje.Add(conductor2, "New Employee 2! ",@"prueba.jpg");
-            viaje.Add(pasajero1, "New Employee 3! ",@"bill2.jpg");
-            viaje.Add(pasajero2, "New Employee 4! ",@"prueba.jpg");
-            viaje.Add(pasajero3, "New Employee 5! ",@"prueba.jpg");
+            viaje.Add(conductor1,@"bill2.jpg");
+            viaje.Add(conductor2,@"prueba.jpg");
+            viaje.Add(pasajero1,@"bill2.jpg");
+            viaje.Add(pasajero2,@"prueba.jpg");
+            viaje.Add(pasajero3,@"prueba.jpg");
 
             pasajero1.Qualify(1,"Se");
             pasajero1.Qualify(5,"Se2");
@@ -33,3 +34,4 @@ namespace PII_Herencia
         }
     }
 }
+

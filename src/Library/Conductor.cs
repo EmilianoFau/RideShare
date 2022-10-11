@@ -13,14 +13,18 @@ public class Conductor : Users
         this.Vehicle = vehicle;
         this.Bio = bio;
         this.CantidadPasajeros = cantidad;
-        if (CantidadPasajeros == 1)
+        if (this.CantidadPasajeros == 1)
         {
             this.Type = "Común";
         }
-        else if (CantidadPasajeros > 1)
+        else if (this.CantidadPasajeros > 1)
         {
             this.Type = "Pool";
         }
+    }
+    public override string Descripcion()
+    {
+        return $"Nombre: {Name}\nApellido: {Surname}\nVehículo: {Vehicle}\nBiografía: {Bio}\nTipo: {Type}";
     }
 }
 
